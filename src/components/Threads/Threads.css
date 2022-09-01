@@ -1,0 +1,54 @@
+.thread-content {
+    margin: 20px;
+    background-color: rgb(39,39,39);
+    width: 60%;
+    margin-left: 19%;
+    border: rgb(39,39,39) 1px solid;
+    border-radius: 20px;
+}
+
+
+.thread-id {
+    float: left;
+    padding: 5px;
+    font-family: -apple-system,BlinkMacSystemFont,'Open Sans',HelveticaNeue,sans-serif;
+}
+
+.thread-title {
+    padding-right: 15%;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,'Open Sans',HelveticaNeue,sans-serif;
+    margin-bottom: 20px;
+}
+
+.thread-body {
+    font-family: -apple-system,BlinkMacSystemFont,'Open Sans',HelveticaNeue,sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    color:white;
+}
+
+.disabled-link {
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+    color: #fff;
+    text-shadow:
+            0 0 7px rgb(0, 186, 120),
+            0 0 10px rgb(0, 186, 120),
+            0 0 21px rgb(0, 186, 120),
+            0 0 42px rgb(0, 186, 120),
+            0 0 82px rgb(0, 186, 120),
+            0 0 92px rgb(0, 186, 120),
+            0 0 102px rgb(0, 186, 120),
+            0 0 151px rgb(0, 186, 120);
+}
+
+img {
+    width: 256px;
+    height: 256px;
+}

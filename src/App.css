@@ -1,0 +1,26 @@
+html {
+    background-color: #303030;
+}
+
+.App {
+    text-align: center;
+    background-color: #303030;
+    color: rgb(0, 186, 120);
+    font-family: "Berlin Sans FB", SansSerif, sans-serif;
+}
+
+.disabled-link {
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+    color: #fff;
+    text-shadow:
+          0 0 7px rgb(0, 186, 120),
+          0 0 10px rgb(0, 186, 120),
+          0 0 21px rgb(0, 186, 120),
+          0 0 42px rgb(0, 186, 120),
+          0 0 82px rgb(0, 186, 120),
+          0 0 92px rgb(0, 186, 120),
+          0 0 102px rgb(0, 186, 120),
+          0 0 151px rgb(0, 186, 120);
+}
