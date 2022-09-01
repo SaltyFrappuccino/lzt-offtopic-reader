@@ -14,12 +14,13 @@ function App() {
   return (
     <div className="App">
       <Router>
-          <Route path="">
-              <Index/>
-          </Route>
+
         <Switch>
           <Route path="/thread/:id" component={Thread}/>
             <Route path="/threads" component={Threads}/>
+            <Route path="">
+                <Index/>
+            </Route>
         </Switch>
       </Router>
     </div>

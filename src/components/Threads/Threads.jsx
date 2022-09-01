@@ -4,12 +4,13 @@ import {Link} from "react-router-dom";
 import {default as axios} from "axios"
 import UseThread from "../Thread/UseThread";
 
-const Threads = () => {
+const Threads = ({full, page}) => {
 
     const [posts, setPosts] = useState([{}])
+    const [reloaded, setReloaded] = useState(false)
 
     function getData() {
-        axios.get("https://api.lolz.guru/threads?forum_id=8&sticky=0&page=0",
+        axios.get("https://api.lolz.guru/threads?forum_id=8&sticky=0&page=" + page,
             {
                 headers: {
                     "Authorization": "Bearer cc92f99ba1bf04dfb76e966a767b7c563d82d88e"
@@ -23,9 +24,13 @@ const Threads = () => {
                 new_posts[i]['thread_title'] = resp.data['threads'][i]['thread_title']
 
             }
-            console.log(new_posts)
             setPosts(new_posts)
             return resp.data
+        }).catch((err) => {
+            if(err['request']['status'] === 429 && reloaded === false) {
+                setTimeout(getData, 5000)
+                setReloaded(true)
+            }
         })
     }
 
@@ -41,7 +46,7 @@ const Threads = () => {
     //     setPost(new_post)
     // }
 
-    useEffect(getData, [getData])
+    useEffect(getData, [page])
 
     // let linked = "https://lolz.guru/threads/" + post['thread_id']
 
@@ -50,7 +55,7 @@ const Threads = () => {
 
             {posts.map((post) => {
                 return(
-                    <UseThread key={post.thread_id} id={post.thread_id} title={post.thread_title} body={post.thread_body}/>
+                    <UseThread key={post.thread_id} id={post.thread_id} title={post.thread_title} full={full} body={post.thread_body}/>
                 )
             })}
 
