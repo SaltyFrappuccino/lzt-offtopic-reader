@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# LZT Offtopic Reader 
+## Software created to read offtopic from lolzteam in minimalistic design
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [Установка](#install)
+## [Использование](#use)
+## [Фитчи](#features)
+## [FAQ](#faq)
 
-## Available Scripts
+## install
 
-In the project directory, you can run:
+### У вас всегда есть три пути: 
+### - Скачать готовый релиз из [release](https://github.com/MorugaShestak/lzt-offtopic-reader/releases)
+### - Использовать [heroku](#heroku)
+### - [Собрать проект самому](#safety)
 
-### `npm start`
+-----
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### heroku
+#### - Делаем `fork` данного репозитория
+#### - Заходим на сайт [heroku](https://heroku.com/)
+#### - Создаём `new app`
+#### - Подключаем свой github аккаунт
+#### - Подключаем нужный репозиторий
+#### - Нажимаем `deploy`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+------
 
-### `npm test`
+### safety
+#### - Создаём директорию на компьютере
+#### - Открываем её через `cmd`/`терминал`/`консоль`
+#### - Вводим `git clone https://github.com/MorugaShestak/lzt-offtopic-reader.git`
+#### - После клонирования открываем склонированную репозиторию и в ней открываем `cmd`/`терминал`/`консоль`
+#### - Вводим `npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+----
 
-### `npm run build`
+## use
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Вверху вы увидите название проекта `LZT Offtopic Reader`, а также автора `Moruga`
+### Под хедером будет галочка, которая отвечает за способ отображения постов. Если галочка установлена, то пост отображается полностью, в ином случае текст поста сокращается до 100 символов.
+### При открытии проекта вы увидите главный `dashboard`, где будут показаны все последние посты с кратким содержанием
+### У каждого поста есть кликлабельный id-шник, а также кнопка "Читать полностью", кооторая перекинет вас на отдельную страницу поста
+### На отдельной странице постов  отображается id-шник поста, тело поста полностью, а также кнопка `Назад`, которая перекинет вас обратно на `dashboard`
+### Внизу страницы есть две кнопки: `Назад` и `Вперёд`, которые меняют страницы. На каждой странице отображается по 20 постов
+### - Внизу страницы также расположено ссылка на страницу `login via token`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## features
 
-### `npm run eject`
+### - Весь текст, который светиться ярко-зелёным цветом является ссылкой
+### - `ID` поста является кликлабельным и он ведёт на оригинальный пост с lolzteam
+### - Каждый раз, когда `API Lolzteam` возвращает ошибку, сервер автоматически переподключается через 3 секунды. Если в течении ~6 секунд информация на странице не появилась (случается, если у вас плохой интернет), советую перезагрузить страницу.
+### - 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## faq
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Q: Я могу `использовать`/`дорабатывать` проект? <br> A: `LZT Offtopic Reader` распространяется под лицензией `GNU GENERAL PUBLIC LICENSE`, а это значит, что вы можете `форкать` и `модифицировать` проект.
+### Q: Кто автор проекта? <br> A: Автор проекта я, Moruga. Узнать подробнее обо мне или узнать мои контакты можно [тут](google.com )
+### Q:  ̶н̶а̶х̶у̶я̶  Зачем было это делать? <br> A: В последнее время наш любимый `lolzteam` или ныне известный как `lolz.guru` превращается не в сайт, посвящённый `Социальной Инженерии`, а в сходку хикк/аморалов/спротиков/детей/ущербов и другого рода биомусора (`детей я к биомусору не отношу`). В следствии этого `оффтопик` превратился в типичную ленту в какой-нибудь социальной сети, из-за чего её стало очень интересно, но неудобно, листать. Софт упрощает прочтение `прекрасных` постов с `лолза`
+### Q: Использовать собственный `token` безопасно? <br> A: На 100%, ведь ваш `token` имеет только право `read`, который позволяет лишь считывать разные данные и даже так, они никуда не отправляются. Вы можете проверить это через `код элемента`, во вкладке `Network`. Если вы всё равно боитесь, вы всегда можете использовать дефолтный `token`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://lolz.guru/account/authorize?client_id=gmbe1u75n3&response_type=token&scope=read
