@@ -1,7 +1,7 @@
 # LZT Offtopic Reader 
 ## Software created to read offtopic from lolzteam in minimalistic design
 
-# [Тема на lolzteam]()
+# [Тема на lolzteam](https://lolz.guru/threads/4301630/)
 
 ## [Установка](#install)
 ## [Использование](#use)
