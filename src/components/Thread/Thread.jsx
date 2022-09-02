@@ -3,7 +3,7 @@ import "./Thread.css"
 import {Link, useParams} from "react-router-dom";
 import {default as axios} from "axios"
 
-const Thread = () => {
+const Thread = ({token}) => {
 
     let {id} = useParams();
 
@@ -14,7 +14,7 @@ const Thread = () => {
         axios.get("https://api.lolz.guru/threads/" + id,
             {
                 headers: {
-                    "Authorization": "Bearer cc92f99ba1bf04dfb76e966a767b7c563d82d88e"
+                    "Authorization": "Bearer " + token
                 }
             }).then((resp) => {
                 const new_post = [];

@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {default as axios} from "axios"
 import UseThread from "../Thread/UseThread";
 
-const Threads = ({full, page}) => {
+const Threads = ({full, page, token}) => {
 
     const [posts, setPosts] = useState([{}])
     const [reloaded, setReloaded] = useState(false)
@@ -13,7 +13,7 @@ const Threads = ({full, page}) => {
         axios.get("https://api.lolz.guru/threads?forum_id=8&sticky=0&page=" + page,
             {
                 headers: {
-                    "Authorization": "Bearer cc92f99ba1bf04dfb76e966a767b7c563d82d88e"
+                    "Authorization": "Bearer " + token
                 }
             }).then((resp) => {
             let new_posts = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [],]
