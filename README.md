@@ -8,6 +8,7 @@
 ## [Фитчи](#features)
 ## [FAQ](#faqu)
 ## [Личный Lolzteam API Token](#token)
+## [Недостатки/Баги/Недоработки/Криндж](#issues)
 
 ## install
 
@@ -68,3 +69,9 @@
 ### Вы можете получить и использовать свой `token`. Для этого перейдите по [этой](https://lolz.guru/account/authorize?client_id=gmbe1u75n3&response_type=token&scope=read) ссылке. Токен будет отображён в `url`, он идёт после строки `#access_token=` и до строки `&expires_in=` (при копировании строки `#access_token=` и `&expires_in=` копировать не нужно)
 ### Использование своего токена предусмотренно в самом `Ридере`, для этого под `By Mrouga` присутсвует отдельный ввод с `placeholder` = `Enter your API token here`
 ### Вы также можете использовать свой `defaukt token` (токен по умолчанию) через изменение кода. Вы должна заменить `state` под названием `token`, который расположен в файлах `src/pages/Index/index.jsx` и `src/components/Thread.jsx`
+
+## issues
+### `header` и блок с тредами смещены по оси X
+### `dashboard` не централизован
+### `Long API response`
+### Страница переключается лишь после повторного нажатия.
