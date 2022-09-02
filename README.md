@@ -6,7 +6,7 @@
 ## [Установка](#install)
 ## [Использование](#use)
 ## [Фитчи](#features)
-## [FAQ](#faq)
+## [FAQ](#faqu)
 ## [Личный Lolzteam API Token](#token)
 
 ## install
@@ -56,7 +56,7 @@
 ### - Каждый раз, когда `API Lolzteam` возвращает ошибку, сервер автоматически переподключается через 3 секунды. Если в течении ~6 секунд информация на странице не появилась (случается, если у вас плохой интернет), советую перезагрузить страницу.
 ### - Вы можете поставить свой [`Личный Lolzteam API Token`](#token)
 
-## faq
+## faqu
 
 ### Q: Я могу `использовать`/`дорабатывать` проект? <br> A: `LZT Offtopic Reader` распространяется под лицензией `GNU GENERAL PUBLIC LICENSE`, а это значит, что вы можете `форкать` и `модифицировать` проект.
 ### Q: Кто автор проекта? <br> A: Автор проекта Moruga, мои контакты: [github](https://github.com/MorugaShestak) [lolzteam](https://lolz.guru/members/3842515/) [telegram](https://t.me/MorugaShest) [все ссылки](https://linktr.ee/morugashestak)
