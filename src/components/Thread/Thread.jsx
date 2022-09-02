@@ -3,12 +3,14 @@ import "./Thread.css"
 import {Link, useParams} from "react-router-dom";
 import {default as axios} from "axios"
 
-const Thread = ({token}) => {
+const Thread = () => {
 
     let {id} = useParams();
 
     const [post, setPost] = useState([])
     const [reloaded, setReloaded] = useState(false)
+    const [token, setToken] = useState("627bf6906b2ea9fe26fecfd83f30c71027a32fe0")
+
 
     function getData() {
         axios.get("https://api.lolz.guru/threads/" + id,
@@ -46,12 +48,13 @@ const Thread = ({token}) => {
     //     setPost(new_post)
     // }
 
-    useEffect(getData, [getData])
+    useEffect(getData, [token])
 
     let linked = "https://lolz.guru/threads/" + post['thread_id']
 
     return (
         <div className={"thread-content"}>
+            <input className={"token"} style={{margin: 10}} placeholder={"Enter your API token here"} onChange={e => {setToken(e.target.value);}}/> <br/>
             <div className={"thread-id"}> id: <a className={"disabled-link"} href={linked}> {post['thread_id']} </a> </div>
             <div className={"thread-title"}> {post['thread_title']} </div> <br/>
             <div dangerouslySetInnerHTML={{__html: post['thread_body']}} className={"thread-body"}/> <br/>

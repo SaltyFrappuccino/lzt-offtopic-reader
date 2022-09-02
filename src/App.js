@@ -9,21 +9,28 @@ import {
 import Index from "./pages/Index";
 import Thread from "./components/Thread/Thread";
 import Threads from "./components/Threads/Threads"
-
-const [token, setToken] = useState("627bf6906b2ea9fe26fecfd83f30c71027a32fe0")
+import {useState} from "react";
 
 function App() {
+
+    // const eventHandler = (event) => {
+    //   console.log(event.target.da)
+    //   setToken(event.target.body)
+    // }
+
   return (
     <div className="App">
+
       <Router>
 
         <Switch>
-          <Route path="/thread/:id" token={token} component={Thread}/>
-            <Route path="/threads" token={token} component={Threads}/>
+          <Route path="/thread/:id" component={Thread}/>
+            <Route path="/threads" component={Threads}/>
             <Route path="">
                 <Index/>
             </Route>
         </Switch>
+
       </Router>
     </div>
   );

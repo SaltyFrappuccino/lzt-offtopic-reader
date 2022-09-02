@@ -46,7 +46,7 @@ const Threads = ({full, page, token}) => {
     //     setPost(new_post)
     // }
 
-    useEffect(getData, [page])
+    useEffect(getData, [token, page])
 
     // let linked = "https://lolz.guru/threads/" + post['thread_id']
 
