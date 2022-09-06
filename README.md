@@ -12,6 +12,7 @@
 
 ## install
 
+
 ### У вас всегда есть три пути: 
 ### - Скачать готовый релиз из [release](https://github.com/MorugaShestak/lzt-offtopic-reader/releases)
 ### - Использовать [heroku](#heroku)
