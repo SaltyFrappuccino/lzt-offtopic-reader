@@ -1,3 +1,12 @@
+.threads {
+    margin: 20px;
+    background-color: rgb(39,39,39);
+    width: 60%;
+    margin-left: 19%;
+    border: rgb(39,39,39) 1px solid;
+    border-radius: 20px;
+}
+
 .thread-content {
     margin: 20px;
     background-color: rgb(39,39,39);
@@ -12,6 +21,7 @@
     float: left;
     padding: 5px;
     font-family: -apple-system,BlinkMacSystemFont,'Open Sans',HelveticaNeue,sans-serif;
+    font-size: 18px;
 }
 
 .thread-title {

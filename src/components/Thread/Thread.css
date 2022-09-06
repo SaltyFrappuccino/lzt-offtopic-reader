@@ -2,7 +2,7 @@
     margin: 20px;
     background-color: rgb(39,39,39);
     width: 60%;
-    margin-left: 19%;
+    margin-left: 22%;
     border: rgb(39,39,39) 1px solid;
     border-radius: 20px;
 }
@@ -12,10 +12,11 @@
     float: left;
     padding: 5px;
     font-family: -apple-system,BlinkMacSystemFont,'Open Sans',HelveticaNeue,sans-serif;
+
 }
 
 .thread-title {
-    padding-right: 15%;
+    padding-right: 0%;
     font-size: 28px;
     font-weight: bold;
     font-family: -apple-system,BlinkMacSystemFont,'Open Sans',HelveticaNeue,sans-serif;
@@ -55,4 +56,63 @@ img {
 hr {
     border-top: 3px rgb(0, 186, 120) solid;
     border-radius: 3px;
+}
+
+.read {
+    width: 33%;
+    padding: 10px;
+    display: block;
+    float: right;
+    font-size: 13px;
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    background-color: rgb(54, 54, 54);
+    background-position: center;
+    padding: 0px 15px;
+    border-style: none;
+    border-radius: 6px;
+    user-select: none;
+    font-style: normal;
+    text-align: center;
+    outline: none;
+    line-height: 34px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    vertical-align: top;
+    -webkit-appearance: none !important;
+    font-weight: 600;
+    transition: background 0.8s;
+    overflow: hidden;
+    height: 34px;
+}
+
+.read:hover {
+    color: #f5f5f5;
+    background-color: rgb(34,142,93);
+}
+
+.back {
+    width: 33%;
+    padding: 10px;
+    font-size: 13px;
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    background-color: rgb(54, 54, 54);
+    padding: 0px 15px;
+    margin: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    vertical-align: top;
+    -webkit-appearance: none !important;
+    font-weight: 600;
+    transition: background 0.8s;
+    overflow: hidden;
+    height: 34px;
+}
+
+.back:hover {
+    color: #f5f5f5;
+    background-color: rgb(34,142,93);
+
 }

@@ -19,4 +19,46 @@
             0 0 92px rgb(0, 186, 120),
             0 0 102px rgb(0, 186, 120),
             0 0 151px rgb(0, 186, 120);
+    cursor: pointer;
+}
+
+.token {
+    background-color: #303030;
+    border: #00ba78 solid 1px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+.fullCheckbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.back {
+    width: 10%;
+    padding: 10px;
+    font-size: 13px;
+    color: rgb(214, 214, 214) !important;
+    text-decoration: none;
+    background-color: rgb(54, 54, 54) !important;
+    padding: 0px 15px;
+    margin: 10px;
+    cursor: pointer;
+    vertical-align: top;
+    -webkit-appearance: none !important;
+    font-weight: 600;
+    transition: background 0.8s;
+    overflow: hidden;
+    height: 34px;
+    margin-left: 45%;
+    border-radius: 20px;
+    color: white !important;
+}
+
+.back:hover {
+    color: #f5f5f5 !important;
+    background-color: rgb(34,142,93) !important;
+
 }

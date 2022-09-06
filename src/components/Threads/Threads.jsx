@@ -51,7 +51,7 @@ const Threads = ({full, page, token}) => {
     // let linked = "https://lolz.guru/threads/" + post['thread_id']
 
     return (
-        <div className={"thread-content"}>
+        <div className={"threads"}>
 
             {posts.map((post) => {
                 return(

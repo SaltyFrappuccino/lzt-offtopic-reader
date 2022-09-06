@@ -25,9 +25,10 @@ function App() {
 
         <Switch>
           <Route path="/thread/:id" component={Thread}/>
-            <Route path="/threads" component={Threads}/>
+            <Route  path="/threads" component={Threads}/>
             <Route path="">
-                <Index/>
+                <Index className={"index"}/>
+                <br/>
             </Route>
         </Switch>
 

@@ -58,7 +58,7 @@ const Thread = () => {
             <div className={"thread-id"}> id: <a className={"disabled-link"} href={linked}> {post['thread_id']} </a> </div>
             <div className={"thread-title"}> {post['thread_title']} </div> <br/>
             <div dangerouslySetInnerHTML={{__html: post['thread_body']}} className={"thread-body"}/> <br/>
-            <Link to={""} style={{color: "#fff", textDecoration: "none", marginBottom: 10, fontSize: 24}}>Назад</Link>
+            <Link to={""} className={"back"} style={{color: "#fff", textDecoration: "none", marginBottom: 10, fontSize: 24}}>Назад</Link>
         </div>
     );
 };

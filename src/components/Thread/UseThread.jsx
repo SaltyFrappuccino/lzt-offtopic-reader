@@ -16,10 +16,10 @@ const UseThread = ({id, title, body, full}) => {
     return (
         <div className={"thread-content"}>
             <hr></hr>
-            <div className={"thread-id"}> id: <a href={linked} className={"disabled-link"}> {id} </a> </div>
+            {/*<div className={"thread-id"}> id: <a href={linked} className={"disabled-link"}> {id} </a> </div>*/}
             <div className={"thread-title"}> "{title}" </div> <br/>
             <div dangerouslySetInnerHTML={{__html: body}} className={"thread-body"}/> <br/>
-            <Link style={{color: "#add8e6", float: "right"}} to={post}>Читать полностью</Link> <br/>
+            <a target={"_blank"} className={"read"} href={linked}> Читать полностью </a> <br/>
 
         </div>
     );
