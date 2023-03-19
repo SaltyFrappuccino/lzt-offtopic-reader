@@ -4,7 +4,7 @@
 # [Тема на lolzteam](https://lolz.guru/threads/4313735/)
 
 ## [Установка](#install)
-## [Использование](#use)
+## [Использование](#use)    
 ## [Фитчи](#features)
 ## [FAQ](#faqu)
 ## [Личный Lolzteam API Token](#token)
